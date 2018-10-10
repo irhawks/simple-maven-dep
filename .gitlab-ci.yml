@@ -19,9 +19,9 @@ cache:
 build:
   stage: build
   script:
-    - cat /root/.m2/settings.xml
     - ls -alh /root/.m2
     - whoami
+    - cat /root/.m2/settings.xml
     #- mvn $MAVEN_CLI_OPTS compile
 
 .test:
