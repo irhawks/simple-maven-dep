@@ -1,3 +1,11 @@
 # README
 
 Simple maven dependency
+
+注意在项目中配置如下的CI变量
+
+CI_DOCKER_REGISTRY_UPLOAD_NAME: upload.docker.nexus.irhawks.com
+CI_MAVEN_REPO_URL
+CI_MAVEN_UPLOAD_PASS
+CI_MAVEN_UPLOAD_URL
+CI_MAVEN_UPLOAD_USER
