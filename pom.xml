@@ -15,4 +15,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>nexus-upload</id>
+      <url>${env.MAVEN_UPLOAD_REPO_URL}</url>
+    </repository>
+  </distributionManagement>
+
 </project>
