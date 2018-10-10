@@ -21,7 +21,7 @@ build:
   image: ${CI_DOCKER_REGISTRY_NAME}/irhawks/maven:default
   script:
     - whoami
-    - ls -alh /user/share/maven/ref
+    - ls -alh /usr/share/maven/ref
     #- cat /root/.m2/settings.xml
     - mvn $MAVEN_CLI_OPTS compile
 
