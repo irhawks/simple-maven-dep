@@ -6,7 +6,7 @@ package com.example.dep;
  */
 public class Dep
 {
-    public static void hello( String name )
+    public static void main( String name )
     {
         System.out.println( "Hello " + name + "!" );
     }
