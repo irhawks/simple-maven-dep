@@ -33,7 +33,7 @@ run:
   stage: run
   script:
     - mvn $MAVEN_CLI_OPTS package
-    - mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.app.App"
+    - mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.dep.Dep"
 
 deploy:
   stage: deploy
