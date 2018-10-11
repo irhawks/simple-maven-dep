@@ -34,6 +34,10 @@ run:
   script:
     - mvn $MAVEN_CLI_OPTS package
     - mvn $MAVEN_CLI_OPTS exec:java -Dexec.mainClass="com.example.dep.Dep"
+  artifacts:
+    paths:
+    - target/simple-maven-dep*.jar
+    expire_in: 2 week
 
 deploy:
   stage: deploy
