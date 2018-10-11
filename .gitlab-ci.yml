@@ -8,13 +8,12 @@ stages:
 
 variables:
   MAVEN_CLI_OPTS: "-s /usr/share/maven/ref/settings.xml --batch-mode"
-  MAVEN_CLI_OPTS: "--batch-mode"
-  #MAVEN_OPTS: "-Dmaven.repo.local=~/.m2/repository"
+  MAVEN_OPTS: "-Dmaven.repo.local=~/.m2/repository"
 
-  #cache:
-  #  paths:
-  #    - .m2/repository/
-  #    - target/
+  cache:
+    paths:
+      - ~/.m2/repository/
+      - target/
 
 build:
   stage: build
