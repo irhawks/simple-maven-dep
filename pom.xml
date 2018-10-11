@@ -19,7 +19,7 @@
   <distributionManagement>
     <repository>
       <id>nexus-upload</id>
-      <url>${env.MAVEN_UPLOAD_REPO_URL}</url>
+      <url>http://nexus.irhawks.com/repository/maven-upload/</url>
     </repository>
   </distributionManagement>
 
